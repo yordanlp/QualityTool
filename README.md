@@ -20,6 +20,6 @@ pip install requirements.txt
 ```
 - Run the app
 ```
-./env/Scripts/activate/python run.py
+./env/Scripts/python run.py
 ```
 - Go to [http://localhost:5000/submit_school](http://localhost:5000/submit_school)
