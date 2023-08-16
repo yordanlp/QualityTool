@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>School Data Submission</title>
+</head>
+
+<body>
+    <h2>Submit School Data</h2>
+    <form action="/submit_school" method="post">
+        School ID: <input type="text" name="school_id"><br><br>
+        School Name: <input type="text" name="school_name"><br><br>
+        Geolocation: <input type="text" name="geolocation"><br><br>
+        Internet Speed: <input type="text" name="internet_speed"><br><br>
+        Provider: <input type="text" name="provider"><br><br>
+        Data Source: <input type="text" name="data_source"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if response %}
+    <h3>Response:</h3>
+    <p>{{ response }}</p>
+    {% endif %}
+</body>
+
+</html>
